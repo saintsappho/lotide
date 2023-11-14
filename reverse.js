@@ -1,14 +1,11 @@
 const reverse = function(string){
   let output = ''
-  for (i = 1 ; i < string.length ; i++){
+  for (i = 1 ; i <= string.length ; i++){
     if (string[string.length - i] != ' '){
       output += string[string.length - i]
     } if (string[string.length - i] === ' '){
-      console.log(output);
-      output = ''
-    } if (i === string.length-1){
-      return
-    }
-  }
+      output += '\n'
+    } 
+  } return output;
 }
-console.log(reverse('where is my mind'))
+console.log(reverse('whats this? whats that?'))
