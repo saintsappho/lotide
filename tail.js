@@ -21,3 +21,4 @@ let result2 = tail([]);
 assertEqual(result2.length, 0); 
 assertEqual(result2[0], undefined) 
 assertEqual(result2[1], undefined);
+assertEqual(tail(["test"]).length, 0);
