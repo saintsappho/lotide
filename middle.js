@@ -43,15 +43,3 @@ assertArraysEqual(middle([1, 2, 3, 4, 5]), [3])
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7, 8, 9]), [5])
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), [5, 6])
-
-
-//assertArraysEqual(middle([1, 2]), []);
-//assertArraysEqual(middle([1, 2], []), true);
-//assertArraysEqual(middle([1, 2, 3], [2]), true); // => true
-//assertArraysEqual(middle([1, 2, 3], [3, 2, 1]), true); // => true
-//assertArraysEqual(middle([1], [1]), true); // => true
-//assertArraysEqual(middle([1], [2]), false); // => false
-//assertArraysEqual(middle([1], [0]), false); // => false
-//assertArraysEqual(middle([], []), true); // => true
-//assertArraysEqual(middle(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-//assertArraysEqual(middle(["1", "2", "3"], ['1', '2', 3]), false); // => false
