@@ -17,20 +17,20 @@ const eqArrays = function(array1, array2) {
     } return true;
 };
 
-const input = process.argv.slice(2)
-const middle = function(input){
+const inputArray = process.argv.slice(2)
+const middle = function(inputArray){
     let output = [];
-    if (input.length < 3 ){
+    if (inputArray.length < 3 ){
         return output;
     };
-    if (input.length % 2 === 0){
-        output.push(input[(input.length / 2) - 1]);
-        output.push(input[(input.length / 2)]);
+    if (inputArray.length % 2 === 0){
+        output.push(inputArray[(inputArray.length / 2) - 1]);
+        output.push(inputArray[(inputArray.length / 2)]);
         
         return output;
     };
-    if (input.length % 2 !== 0){
-        output.push(input[(input.length - 1) / 2]);
+    if (inputArray.length % 2 !== 0){
+        output.push(inputArray[(inputArray.length - 1) / 2]);
        
         return output;
     };
