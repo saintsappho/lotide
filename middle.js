@@ -28,8 +28,8 @@ const middle = function(inputArray){
         output.push(inputArray[(inputArray.length / 2)]);
         
         return output;
-    };
-    if (inputArray.length % 2 !== 0){
+    }
+    else {
         output.push(inputArray[(inputArray.length - 1) / 2]);
        
         return output;
