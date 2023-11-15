@@ -19,20 +19,20 @@ const eqArrays = function(array1, array2) {
 
 const inputArray = process.argv.slice(2)
 const middle = function(inputArray){
-    let output = [];
+    let outputArray = [];
     if (inputArray.length < 3 ){
-        return output;
+        return outputArray;
     };
     if (inputArray.length % 2 === 0){
-        output.push(inputArray[(inputArray.length / 2) - 1]);
-        output.push(inputArray[(inputArray.length / 2)]);
+        outputArray.push(inputArray[(inputArray.length / 2) - 1]);
+        outputArray.push(inputArray[(inputArray.length / 2)]);
         
-        return output;
+        return outputArray;
     }
     else {
-        output.push(inputArray[(inputArray.length - 1) / 2]);
+        outputArray.push(inputArray[(inputArray.length - 1) / 2]);
        
-        return output;
+        return outputArray;
     };
 };
 assertArraysEqual(middle([1]), [])
