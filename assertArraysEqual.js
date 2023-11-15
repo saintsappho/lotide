@@ -1,10 +1,10 @@
-const assertArraysEqual = function(actual, expected) {
-    if (actual === expected) {
-      console.log(` 🟢🟢🟢 Assertion Passed: ${actual} === ${expected} 🟢🟢🟢 `);
+const assertArraysEqual = function(arrayAssert1, arrayAssert2) {
+    if (eqArrays(arrayAssert1, arrayAssert2)) {
+      console.log(` 🟢🟢🟢 Assertion Passed: ${arrayAssert1} === ${arrayAssert2} 🟢🟢🟢 `);
     }
   
-    if (actual !== expected) {
-      console.log(` 🟥🟥🟥 Assertion Failed: ${actual} !== ${expected} 🟥🟥🟥 `);
+    if (!eqArrays(arrayAssert1, arrayAssert2)) {
+      console.log(` 🟥🟥🟥 Assertion Failed: ${arrayAssert1} !== ${arrayAssert2} 🟥🟥🟥 `);
     }
   };
 const eqArrays = function(array1, array2) {
