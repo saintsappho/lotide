@@ -10,6 +10,8 @@ const assertEqual = function(actual, expected) {
   return array[0];
 };
 */
+
+// ---------------------------- TEST CASES ---------------------------------
 const tail = function(array) {
   return array.slice(1);
 };

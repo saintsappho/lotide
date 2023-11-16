@@ -1,12 +1,12 @@
-const assertArraysEqual = function(arrayAssert1, arrayAssert2) {
-    if (eqArrays(arrayAssert1, arrayAssert2)) {
-        console.log(` 🟢🟢🟢 Assertion Passed: ${arrayAssert1} === ${arrayAssert2} 🟢🟢🟢 `);
+const assertArraysEqual = function(actual, expected) {
+    if (eqArrays(actual, expected)) {
+        console.log(` 🟢🟢🟢 Assertion Passed: ${actual} === ${expected} 🟢🟢🟢 `);
     }
 
-    if (!eqArrays(arrayAssert1, arrayAssert2)) {
-        console.log(` 🟥🟥🟥 Assertion Failed: ${arrayAssert1} !== ${arrayAssert2} 🟥🟥🟥 `);
+    else {
+        console.log(` 🟥🟥🟥 Assertion Failed: ${actual} !== ${expected} 🟥🟥🟥 `);
     }
-};
+}
 const eqArrays = function(array1, array2) {
     if (array1.length !== array2.length) {
         return false;
@@ -16,6 +16,7 @@ const eqArrays = function(array1, array2) {
         }
     } return true;
 };
+// ---------------------------- TEST CASES ---------------------------------
 assertArraysEqual([1], [2]);
 assertArraysEqual([1, 2], [1, 2]);
 assertArraysEqual([1, 2], '1, 2');

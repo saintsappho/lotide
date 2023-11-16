@@ -9,6 +9,6 @@ const assertEqual = function(actual, expected) {
 const head = function(array) {
   return array[0]
 }
-
+// ---------------------------- TEST CASES ---------------------------------
 assertEqual(head([5]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");

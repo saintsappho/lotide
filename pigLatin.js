@@ -15,5 +15,5 @@ const latinify = function(input){
     }
   } return output;
 }
-
+// ---------------------------- TEST CASES ---------------------------------
 console.log(latinify(process.argv.slice(2)))
