@@ -7,11 +7,7 @@ const assertEqual = function(actual, expected) {
         console.log(`🟥🟥🟥 Assertion Failed: ${actual} !== ${expected}`);
     }
 };
-const findKeyByValue = function(obj, kv) {
-    for (key in obj) {
-        if (obj[key] === kv) return key;
-    };
-};
+
 const findKey = function(object, callback){
     for (let key in object){
         if (callback(object[key])){ 
