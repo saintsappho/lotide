@@ -1,12 +1,10 @@
 const assertObjectsEqual = function(actual, expected) {
-    //loop here to go through key value pair andn check with actual and expected  
-    for(let key in actual){
-      if (!eqObjects(actual, expected)) {
-        console.log(`🟥🟥🟥 Assertion Failed 🟥🟥🟥 `);
-      } 
-    } console.log(`🟢🟢🟢 Assertion Passed 🟢🟢🟢`)
-    return;
-  };
+  if (!eqObjects(actual, expected)) {
+    console.log(`🟥🟥🟥 Assertion Failed 🟥🟥🟥 `);
+  } 
+console.log(`🟢🟢🟢 Assertion Passed 🟢🟢🟢`)
+return;
+};
   
 
 const eqObjects = function(object1, object2) {
