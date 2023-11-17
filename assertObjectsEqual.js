@@ -1,11 +1,12 @@
-const assertObjectEqual = function(actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
     //loop here to go through key value pair andn check with actual and expected  
     for(let key in actual){
       if (actual[key] !== expected[key]) {
-        return (`🟥🟥🟥 Assertion Failed: ${actual} !== ${expected}`);
+        console.log(`🟥🟥🟥 Assertion Failed 🟥🟥🟥 `);
         
       } 
-    } console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
+    } console.log(`🟢🟢🟢 Assertion Passed 🟢🟢🟢`)
+      return;
   };
   
 
@@ -23,7 +24,7 @@ const eqObjects = function(object1, object2) {
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject= { size: "medium", color: "red" };
-assertEqual(eqObjects(shirtObject , anotherShirtObject), true)
+assertObjectsEqual(eqObjects(shirtObject , anotherShirtObject), true)
 
 const longSleeveShirtObject= { size: "medium", color: "red", sleeveLength: "long" };
-assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
+assertObjectsEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
