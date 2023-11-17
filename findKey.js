@@ -13,7 +13,7 @@ const findKeyByValue = function(obj, kv) {
     };
 };
 const findKey = function(object, callback){
-    for (key in object){
+    for (let key in object){
         if (callback(object[key])){ 
             return(key)
         }
