@@ -14,19 +14,19 @@ const eqObjects = function(object1, object2) {
     if (object1[key] !== object2[key]) {
       return false;
     }
-    if (object1[key].isArray) {
-      eqArrays(object1[key], object2[key])
+    if (Array.isArray(object1[key])) {
+      if (!eqArrays(object1[key], object2[key])) return false;
     }
   } return true;
 };
 
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
-      return false;
+    return false;
   } for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-          return false;
-      }
+    if (array1[i] !== array2[i]) {
+      return false;
+    }
   } return true;
 };
 
