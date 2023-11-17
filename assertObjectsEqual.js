@@ -1,7 +1,7 @@
 const assertObjectsEqual = function(actual, expected) {
     //loop here to go through key value pair andn check with actual and expected  
     for(let key in actual){
-      if (actual[key] !== expected[key]) {
+      if (actual.key !== expected.key) {
         console.log(`🟥🟥🟥 Assertion Failed 🟥🟥🟥 `);
         
       } 
