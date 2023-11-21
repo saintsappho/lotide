@@ -1,5 +1,6 @@
 const letterPositions = require('../letterPositions')
 const assertObjectsEqual = require('../assertObjectsEqual')
+const assert = require('chai').assert;
 // ---------------------------- TEST CASES ---------------------------------
 
 console.log(assertObjectsEqual(letterPositions("lighthouse in the house"), {

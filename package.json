@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@saintsappho/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide function library",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/saintsappho/lotide.git"
   },
-  "author": "",
+  "author": "saintsappho",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/saintsappho/lotide/issues"

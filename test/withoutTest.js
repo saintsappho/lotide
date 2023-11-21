@@ -1,5 +1,6 @@
 const without = require('../without')
 const assertArraysEqual = require('../assertArraysEqual')
+const assert = require('chai').assert;
 // ---------------------------- TEST CASES ---------------------------------
 console.log(assertArraysEqual(without([1, 2, 3], [1, 2]), [3]));
 console.log(assertArraysEqual(without([1, 2, 3], [2]), [1, 3]));

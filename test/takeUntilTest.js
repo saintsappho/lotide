@@ -1,5 +1,6 @@
 const takeUntil = require('../takeUntil');
 const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
 
 // ---------------------------- TEST CASES ---------------------------------
 

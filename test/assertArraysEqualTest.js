@@ -1,15 +1,14 @@
 const assertArraysEqual = require('../assertArraysEqual')
-//------------------------ test cases -------------------------
-console.log(assertArraysEqual([1], [2])); // 🟥🟥🟥
-console.log(assertArraysEqual([1, 2], [1, 2]));// 🟢🟢🟢
-console.log(assertArraysEqual([1, 2], '1, 2'));// 🟥🟥🟥
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3,]));// 🟢🟢🟢
-console.log(assertArraysEqual([1, 2, 3], [3, 2, 1]));// 🟥🟥🟥
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3, 4]));// 🟥🟥🟥
-console.log(assertArraysEqual([1, 2, 3], [3, 2, 1]));// 🟥🟥🟥
-console.log(assertArraysEqual([1], [1]));// 🟢🟢🟢
-console.log(assertArraysEqual([1], [2]));// 🟥🟥🟥
-console.log(assertArraysEqual([1], [0]));// 🟥🟥🟥
-console.log(assertArraysEqual([], []));// 🟢🟢🟢
-console.log(assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]));// 🟢🟢🟢
-console.log(assertArraysEqual(["1", "2", "3"], ['1', '2', 3]));// 🟥🟥🟥
+console.log(assertArraysEqual(['1', '2', '3'],[1,2,3]))
+const assert = require('chai').assert;
+describe("#assertArraysEqual", () => {
+  it("returns true, 🟢🟢🟢 1 === 1 🟢🟢🟢 for [1], [1]", () => {
+    assert.deepEqual(assertArraysEqual([1],[1]), (true, `🟢🟢🟢 1 === 1 🟢🟢🟢`)); 
+  });
+  it("returns true, 🟢🟢🟢 ['1', '2', '3'] === ['1', '2', '3'] 🟢🟢🟢 for ['1', '2', '3'], ['1', '2', '3']", () => {
+    assert.deepEqual(assertArraysEqual(['1', '2', '3'],['1', '2', '3']), (true, `🟢🟢🟢 1,2,3 === 1,2,3 🟢🟢🟢`)); 
+  });
+  it("returns false, 🟥🟥🟥 1,2,3 !== 1,2,3 🟥🟥🟥 for ['1', '2', '3'], [1,2,3]", () => {
+    assert.deepEqual(assertArraysEqual(['1', '2', '3'],[1,2,3]), (true, '🟥🟥🟥 1,2,3 !== 1,2,3 🟥🟥🟥')); 
+  });  
+});

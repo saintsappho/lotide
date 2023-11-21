@@ -1,5 +1,6 @@
 const findKeyByValue = require('../findKeyByValue')
 const assertEqual = require('../assertEqual')
+const assert = require('chai').assert;
 //------------------ TEST -----------------
 const bestTVShowsByGenre = {
     sci_fi: "The Expanse",
