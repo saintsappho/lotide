@@ -2,12 +2,9 @@
   "name": "lotide",
   "version": "1.0.0",
   "description": "",
-  "main": "assertArraysEqual.js",
-  "directories": {
-    "test": "test"
-  },
+  "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "repository": {
     "type": "git",

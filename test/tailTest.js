@@ -8,4 +8,3 @@ describe("#tail", () => {
     assert.strictEqual(((tail(['Hello', 'Lighthouse', 'Labs'])).length), 2)
   });
 });
-
