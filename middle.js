@@ -1,6 +1,4 @@
 
-const inputArray = process.argv.slice(2)
-
 const middle = function(inputArray){
     let outputArray = [];
     if (inputArray.length < 3 ){
