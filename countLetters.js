@@ -1,12 +1,3 @@
-const assertObjectEqual = function(actual, expected) {
-  //loop here to go through key value pair andn check with actual and expected  
-  for(let key in actual){
-    if (actual[key] !== expected[key]) {
-      return (`🟥🟥🟥 Assertion Failed: ${actual} !== ${expected}`);
-      
-    } 
-  } console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`);
-};
 
 const countLetters = function(stringInput) {
     const results = {};
@@ -19,10 +10,5 @@ const countLetters = function(stringInput) {
     }
     return results;
 }
-  // ---------------------------- TEST CASES ---------------------------------
-const stringInput = "lighthouse in the house";
+module.exports = countLetters
 
-console.log(countLetters(stringInput));
-
-console.log(assertObjectEqual(countLetters(stringInput), {l: 1, i: 2, g: 1, h: 4, t: 2, o: 2, u: 2, s: 2, e: 3, ' ': 3, n: 1}))
-  

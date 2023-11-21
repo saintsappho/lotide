@@ -8,5 +8,4 @@ const reverse = function(string){
     } 
   } return output;
 }
-// ---------------------------- TEST CASES ---------------------------------
-console.log(reverse('whats this? whats that?'))
+module.exports = reverse
